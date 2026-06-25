@@ -87,15 +87,15 @@
   },
   "suites": [
     {
-      "title": "smoke/scratch.spec.ts",
-      "file": "smoke/scratch.spec.ts",
+      "title": "smoke/abhibus.spec.ts",
+      "file": "smoke/abhibus.spec.ts",
       "column": 0,
       "line": 0,
       "specs": [],
       "suites": [
         {
           "title": "Abhibus Search Test",
-          "file": "smoke/scratch.spec.ts",
+          "file": "smoke/abhibus.spec.ts",
           "line": 3,
           "column": 6,
           "specs": [
@@ -115,12 +115,12 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 28958,
+                      "duration": 29430,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-06-25T12:05:18.927Z",
+                      "startTime": "2026-06-25T12:08:29.729Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -128,8 +128,8 @@
                   "status": "expected"
                 }
               ],
-              "id": "35af7063535faa4c3d71-6c08b7de1a983f0bdcf8",
-              "file": "smoke/scratch.spec.ts",
+              "id": "0a66ac35cb23e380372c-9ae30c748a5e4cfb5cb6",
+              "file": "smoke/abhibus.spec.ts",
               "line": 7,
               "column": 9
             }
@@ -140,8 +140,8 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-06-25T12:05:18.300Z",
-    "duration": 30157.783,
+    "startTime": "2026-06-25T12:08:28.818Z",
+    "duration": 31063.754,
     "expected": 1,
     "skipped": 0,
     "unexpected": 0,
