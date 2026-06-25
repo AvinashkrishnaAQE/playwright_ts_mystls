@@ -46,6 +46,22 @@
           "**/*.@(spec|test).?(c|m)[jt]s?(x)"
         ],
         "timeout": 30000
+      },
+      {
+        "outputDir": "/home/ascendqe007/Downloads/pwts-mystlc/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "abhibus",
+        "name": "abhibus",
+        "testDir": "/home/ascendqe007/Downloads/pwts-mystlc/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
       }
     ],
     "quiet": false,
@@ -71,82 +87,40 @@
   },
   "suites": [
     {
-      "title": "../setup/auth.setup.ts",
-      "file": "../setup/auth.setup.ts",
-      "column": 0,
-      "line": 0,
-      "specs": [
-        {
-          "title": "authenticate as platform admin",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "setup",
-              "projectName": "setup",
-              "results": [
-                {
-                  "workerIndex": 0,
-                  "parallelIndex": 0,
-                  "status": "passed",
-                  "duration": 7880,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2026-06-15T11:38:50.367Z",
-                  "annotations": [],
-                  "attachments": []
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "17e3fe6f4d9d8bd79c6b-977daff287f2a33096df",
-          "file": "../setup/auth.setup.ts",
-          "line": 7,
-          "column": 6
-        }
-      ]
-    },
-    {
-      "title": "smoke/tenant-organisations.spec.ts",
-      "file": "smoke/tenant-organisations.spec.ts",
+      "title": "smoke/scratch.spec.ts",
+      "file": "smoke/scratch.spec.ts",
       "column": 0,
       "line": 0,
       "specs": [],
       "suites": [
         {
-          "title": "Tenant Organisations Smoke Tests",
-          "file": "smoke/tenant-organisations.spec.ts",
-          "line": 4,
+          "title": "Abhibus Search Test",
+          "file": "smoke/scratch.spec.ts",
+          "line": 3,
           "column": 6,
           "specs": [
             {
-              "title": "should navigate to Tenant Organisations and see Register Tenant text",
+              "title": "should search for bus and select seats",
               "ok": true,
               "tags": [],
               "tests": [
                 {
-                  "timeout": 30000,
+                  "timeout": 90000,
                   "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
+                  "projectId": "abhibus",
+                  "projectName": "abhibus",
                   "results": [
                     {
-                      "workerIndex": 1,
+                      "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 8087,
+                      "duration": 28958,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-06-15T11:38:59.530Z",
+                      "startTime": "2026-06-25T12:05:18.927Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -154,78 +128,10 @@
                   "status": "expected"
                 }
               ],
-              "id": "498d7a52d99bd435ca52-dec464d0f964b153faca",
-              "file": "smoke/tenant-organisations.spec.ts",
-              "line": 8,
-              "column": 7
-            },
-            {
-              "title": "should navigate to Tenant Onboarding page and fill details",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 1,
-                      "parallelIndex": 0,
-                      "status": "passed",
-                      "duration": 14274,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-06-15T11:39:08.063Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "498d7a52d99bd435ca52-2bb27d02efa854e5d868",
-              "file": "smoke/tenant-organisations.spec.ts",
-              "line": 25,
-              "column": 7
-            },
-            {
-              "title": "should navigate to Tenant Onboarding page and fail due to assertion logic mismatch",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 1,
-                      "parallelIndex": 0,
-                      "status": "passed",
-                      "duration": 12267,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-06-15T11:39:22.390Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "498d7a52d99bd435ca52-025ac01ab1817cbf1e9b",
-              "file": "smoke/tenant-organisations.spec.ts",
-              "line": 59,
-              "column": 7
+              "id": "35af7063535faa4c3d71-6c08b7de1a983f0bdcf8",
+              "file": "smoke/scratch.spec.ts",
+              "line": 7,
+              "column": 9
             }
           ]
         }
@@ -234,9 +140,9 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-06-15T11:38:49.575Z",
-    "duration": 45295.65,
-    "expected": 4,
+    "startTime": "2026-06-25T12:05:18.300Z",
+    "duration": 30157.783,
+    "expected": 1,
     "skipped": 0,
     "unexpected": 0,
     "flaky": 0

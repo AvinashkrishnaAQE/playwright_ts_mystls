@@ -46,5 +46,11 @@ export default defineConfig({
       // Dependency on the setup project ensures authentication runs first
       dependencies: ['setup'],
     },
+
+    // Abhibus project without setup dependency
+    {
+      name: 'abhibus',
+      use: { ...devices['Desktop Chrome'] },
+    },
   ],
 });
