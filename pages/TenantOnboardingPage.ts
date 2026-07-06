@@ -1,4 +1,5 @@
 import { Page, Locator } from '@playwright/test';
+
 import { CommonActions } from '../utils/commonActions';
 
 export class TenantOnboardingPage {
@@ -21,12 +22,15 @@ export class TenantOnboardingPage {
     this.actions = new CommonActions(page);
 
     this.pageHeader = page.getByRole('heading', { name: 'Tenant Onboarding', exact: true });
+    
     this.subscriptionStarterBtn = page.getByRole('button').filter({ hasText: 'Starter' });
+    
     this.organisationNameInput = page.getByPlaceholder('e.g. Acme Corporation Pvt Ltd');
     this.industryDropdown = page.locator('select').filter({ hasText: /Select industry/i });
     this.addressLine1Input = page.getByPlaceholder('Street address, building number');
     this.cityInput = page.getByPlaceholder('e.g. Bengaluru');
     this.stateInput = page.getByPlaceholder('e.g. Karnataka');
+    
     this.countryInput = page.getByPlaceholder('e.g. India');
     this.postalCodeInput = page.getByPlaceholder('e.g. 560001');
     this.nextBtn = page.getByRole('button', { name: 'Next' });
@@ -37,6 +41,7 @@ export class TenantOnboardingPage {
     await this.actions.verifyLocatorVisible(this.pageHeader);
   }
 
+  
   async selectStarterPlan() {
     await this.actions.clickElement(this.subscriptionStarterBtn);
   }
@@ -72,7 +77,8 @@ export class TenantOnboardingPage {
   async clickNext() {
     await this.actions.clickElement(this.nextBtn);
   }
-
+  
+//Verify step 2 loaded 
   async verifyStep2Loaded() {
     await this.actions.verifyLocatorVisible(this.step2Header);
   }
