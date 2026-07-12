@@ -25,8 +25,10 @@ export default defineConfig({
   use: {
     /* Base URL to use in actions like `await page.goto('/')`. */
     baseURL: process.env.BASE_URL || 'https://mystlc.ai/login',
+    viewport: null,
     launchOptions: {
       slowMo: 1000,
+      args: ['--start-maximized'],
     },
   },
 
@@ -42,7 +44,11 @@ export default defineConfig({
     // Main browser project
     {
       name: 'chromium',
-      use: { ...devices['Desktop Chrome'] },
+      use: {
+        ...devices['Desktop Chrome'],
+        viewport: null,
+        deviceScaleFactor: undefined,
+      },
       // Dependency on the setup project ensures authentication runs first
       dependencies: ['setup'],
     },

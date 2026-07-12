@@ -92,12 +92,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 7880,
+                  "duration": 8749,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-06-15T11:38:50.367Z",
+                  "startTime": "2026-07-12T05:26:48.559Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -113,20 +113,20 @@
       ]
     },
     {
-      "title": "smoke/tenant-organisations.spec.ts",
-      "file": "smoke/tenant-organisations.spec.ts",
+      "title": "smoke/login.spec.ts",
+      "file": "smoke/login.spec.ts",
       "column": 0,
       "line": 0,
       "specs": [],
       "suites": [
         {
-          "title": "Tenant Organisations Smoke Tests",
-          "file": "smoke/tenant-organisations.spec.ts",
+          "title": "Login Smoke Tests",
+          "file": "smoke/login.spec.ts",
           "line": 4,
           "column": 6,
           "specs": [
             {
-              "title": "should navigate to Tenant Organisations and see Register Tenant text",
+              "title": "should successfully log in with valid credentials and see dashboard header",
               "ok": true,
               "tags": [],
               "tests": [
@@ -141,12 +141,12 @@
                       "workerIndex": 1,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 8087,
+                      "duration": 8182,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-06-15T11:38:59.530Z",
+                      "startTime": "2026-07-12T05:26:59.067Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -154,77 +154,9 @@
                   "status": "expected"
                 }
               ],
-              "id": "498d7a52d99bd435ca52-dec464d0f964b153faca",
-              "file": "smoke/tenant-organisations.spec.ts",
+              "id": "68c695625bed9840c06c-6f6496e5f4c90568b71e",
+              "file": "smoke/login.spec.ts",
               "line": 8,
-              "column": 7
-            },
-            {
-              "title": "should navigate to Tenant Onboarding page and fill details",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 1,
-                      "parallelIndex": 0,
-                      "status": "passed",
-                      "duration": 14274,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-06-15T11:39:08.063Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "498d7a52d99bd435ca52-2bb27d02efa854e5d868",
-              "file": "smoke/tenant-organisations.spec.ts",
-              "line": 25,
-              "column": 7
-            },
-            {
-              "title": "should navigate to Tenant Onboarding page and fail due to assertion logic mismatch",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 1,
-                      "parallelIndex": 0,
-                      "status": "passed",
-                      "duration": 12267,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-06-15T11:39:22.390Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "498d7a52d99bd435ca52-025ac01ab1817cbf1e9b",
-              "file": "smoke/tenant-organisations.spec.ts",
-              "line": 59,
               "column": 7
             }
           ]
@@ -234,9 +166,9 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-06-15T11:38:49.575Z",
-    "duration": 45295.65,
-    "expected": 4,
+    "startTime": "2026-07-12T05:26:47.691Z",
+    "duration": 20156.062,
+    "expected": 2,
     "skipped": 0,
     "unexpected": 0,
     "flaky": 0
